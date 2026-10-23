@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>VantricMotion | CAD Visualization & Product Rendering</title>
+
+  <!-- Google Fonts: Space Grotesk (headings) + IBM Plex Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- All styling lives in style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ========================================================
+       HEADER: logo, navigation, email button
+       ======================================================== -->
+  <header>
+    <div class="wrap bar">
+      <!-- Logo: logo.png is the 9:1 text logo shown over the hero.
+           logo-square.png is a 1:1 PNG (e.g. 512x512 px) shown once the visitor scrolls past the hero. -->
+      <a href="#" class="logo" aria-label="VantricMotion">
+        <img class="logo-wide" src="./Static/imgs/logo3.png" alt="VantricMotion" width="900" height="100">
+        <img class="logo-square" src="./Static/imgs/logo2.png" alt="" width="512" height="512">
+      </a>
+
+      <nav aria-label="Primary">
+        <a href="#inspect">Before and after</a>
+        <a href="#process">Process</a>
+        <a href="#projects">Projects</a>
+        <a href="#lead">Technical lead</a>
+        <a href="#formats">Formats</a>
+      </nav>
+
+      <a class="btn primary" href="mailto:vantric@proton.me?subject=New%20CAD%20Visualization%20Project%20Inquiry">Email your brief</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================================================
+         HERO: headline, buttons, showreel
+         ====================================================== -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+
+        <!-- Left: text -->
+        <div>
+          <p class="kicker">3D technical artist and CAD retopology specialist</p>
+          <h1>Raw CAD in. <em>Photoreal</em> product shots out.</h1>
+          <p class="lead">Skip the prototype photo shoot. We clean up heavy CAD assemblies, build true-to-life materials, and render 4K stills and motion clips for investors, marketplaces, and launches.</p>
+
+          <div class="cta">
+            <a class="btn primary" href="mailto:vantric@proton.me?subject=New%20CAD%20Visualization%20Project%20Inquiry">Email your brief</a>
+            <button class="btn" data-copy type="button"><span data-copy-label>Copy vantric@proton.me</span></button>
+          </div>
+        </div>
+
+        <!-- Right: video placeholder -->
+        <!-- Right: video placeholder -->
+        <div>
+            <div class="sheet">
+                <video src="./Static/videos/video2.mp4"  autoplay muted loop playsinline style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--radius-md); display: block;"></video>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================
+         STATS STRIP
+         ====================================================== -->
+    <div class="strip">
+      <div class="wrap">
+        <div class="s"><strong>Sub-mm</strong><span>Detail accuracy</span></div>
+        <div class="s"><strong>4K and 8K</strong><span>Studio stills</span></div>
+        <div class="s"><strong>100% native</strong><span>CAD pipeline</span></div>
+      </div>
+    </div>
+
+    <!-- ======================================================
+         BEFORE / AFTER SLIDER
+         The two images are drawn as SVG by the JavaScript below.
+         ====================================================== -->
+         <section id="inspect" class="alt">
+               <div class="wrap" style="max-width:960px">
+                 <div class="head">
+                   <h2>Slide to inspect the transformation</h2>
+                   <p>Drag across the model to compare the raw CAD mesh with the finished studio render.</p>
+                 </div>
+
+                 <div class="sheet">
+                   <div id="slider">
+                     <img src="./Static/imgs/earbuds2.png" alt="After: studio render" class="slider-img">
+                     <div id="before" class="before">
+                       <img src="./Static/imgs/CAD.png" alt="Before: raw CAD mesh" class="slider-img">
+                     </div>
+
+                     <span class="tag l">Before: raw mesh</span>
+                     <span class="tag r">After: studio render</span>
+
+                     <div class="handle"><div class="grip" aria-hidden="true">↔</div></div>
+                     <input id="range" type="range" min="0" max="100" value="50" aria-label="Compare raw mesh with studio render">
+                   </div>
+                   <div class="titleblock">
+                     <span><b>JBL T115 TWS</b> Speculative CAD Visualization & CMF Study</span>
+                     <span>Drag to compare</span>
+                   </div>
+                 </div>
+               </div>
+             </section>
+
+    <!-- ======================================================
+         COMPARISON: standard exports vs VantricMotion
+         ====================================================== -->
+    <section>
+      <div class="wrap">
+        <div class="head">
+          <h2>Stop showing investors wireframe screenshots</h2>
+          <p>Engineering viewports are built for manufacturing, not marketing. We turn raw CAD files into visuals that sell the product.</p>
+        </div>
+
+        <div class="vs">
+          <div class="no">
+            <h3>Standard CAD viewport exports</h3>
+            <ul>
+              <li>Flat, plastic lighting with unnatural reflections.</li>
+              <li>Heavy triangulated meshes that cause shading glitches.</li>
+              <li>No material depth: no scratches, dust, or metal grain.</li>
+              <li>Visuals that fail to convey quality or a premium feel.</li>
+            </ul>
+          </div>
+
+          <div class="yes">
+            <h3>VantricMotion retopology and renders</h3>
+            <ul>
+              <li>Studio HDRI lighting tailored to your product’s bevels.</li>
+              <li>Clean quad topology built for fast, flawless 8K renders.</li>
+              <li>Custom PBR materials: brushed metal, carbon weave, sapphire glass.</li>
+              <li>Commercial assets ready for pitch decks, catalogs, and websites.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         PROCESS: four-step pipeline
+         Tabs and panel content are filled in by the JavaScript.
+         ====================================================== -->
+    <section id="process" class="alt">
+      <div class="wrap">
+        <div class="head"><h2>A four-step visualization pipeline</h2></div>
+
+        <div class="pipe">
+          <div role="tablist" aria-label="Pipeline steps" id="tabs"></div>
+          <div role="tabpanel" id="panel" tabindex="0"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         PROJECTS: cards are generated from the list in the JS
+         ====================================================== -->
+         <section id="projects">
+               <div class="wrap">
+                 <div class="head">
+                   <h2>Featured projects</h2>
+                   <p>Open any project to see its mesh source, materials, and deliverables.</p>
+                 </div>
+
+                 <div class="cards" id="cards">
+                   <!-- Project 1 -->
+                   <!-- Card 1 -->
+                   <article class="card">
+                     <div class="ph"><img src="./Static/imgs/back.png" alt="Precision Tri-Axial Timepiece" class="project-img"></div>
+                     <div class="in">
+                       <span class="field">Horology</span>
+                       <h3>Girard perregaux tri-axial tourbillon watch</h3>
+                       <p>Mechanical movement animated & rendered with brushed titanium, ruby jewels, and glass refraction.</p>
+                       <button class="btn" type="button" data-dialog="dlg-watch">View spec sheet</button>
+                     </div>
+                   </article>
+
+                   <!-- Card 2 -->
+                   <article class="card">
+                     <div class="ph"><img src="./Static/imgs/Epson.png" alt="High-Torque Robotic Actuator" class="project-img"></div>
+                     <div class="in">
+                       <span class="field">Robotics</span>
+                       <h3>Epson robotic arm</h3>
+                       <p>CAD-to-render pipeline of an Epson C4-A601S robot arm, featuring full mesh retopology, high-fidelity material mapping, and production rendering.</p>
+                       <button class="btn" type="button" data-dialog="dlg-robotics">View spec sheet</button>
+                     </div>
+                   </article>
+
+                   <!-- Card 3 -->
+                   <article class="card">
+                     <div class="ph"><img src="./Static/imgs/radialEgnine.png" alt="Radial Aviation Engine Assembly" class="project-img"></div>
+                     <div class="in">
+                       <span class="field">Aerospace</span>
+                       <h3>7-Cylinder Radial Engine</h3>
+                       <p>CAD-to-DCC reconstruction of a 7-cylinder radial engine with production-ready topology, textured mechanical surfaces, and an exploded animation rig.</p>
+                       <button class="btn" type="button" data-dialog="dlg-engine">View spec sheet</button>
+                     </div>
+                   </article>
+                 </div>
+
+               </div>
+             </section>
+
+    <!-- ======================================================
+         TECHNICAL LEAD
+         ====================================================== -->
+    <section id="lead" class="alt">
+      <div class="wrap lead-grid">
+          <!--<div class="portrait">
+                <img src="nezw.jpg" alt="Nez Wijesinghe">
+        </div>-->
+
+        <div>
+          <h2>Nez Wijesinghe</h2>
+          <p class="role">Founder of VantricMotion, lead CAD visualization artist, and retopology specialist</p>
+          <blockquote>“I bridge the gap between heavy, unpolished engineering CAD and high-end commercial visualization. With quad retopology, physically accurate materials, and studio lighting, I help hardware startups, designers, and engineers show their products in photoreal detail before manufacturing.”</blockquote>
+
+          <!-- TODO: point these at your real profile pages -->
+          <div class="links">
+                      <a class="btn icon-btn" href="https://www.instagram.com/nezwje/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src="https://img.icons8.com/?size=100&id=59813&format=png&color=000000" alt="">
+                      </a>
+                      <a class="btn icon-btn" href="https://www.linkedin.com/in/nezwijesinghe/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="">
+                      </a>
+                      <a class="btn icon-btn" href="https://www.behance.net/vantricmotion" target="_blank" rel="noopener noreferrer" aria-label="Behance case studies">
+                        <img src="https://img.icons8.com/?size=100&id=102965&format=png&color=000000" alt="">
+                      </a>
+                      <a class="btn primary" href="mailto:vantric@proton.me">Email Nez</a>
+                    </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         FORMATS: what goes in, what comes out
+         ====================================================== -->
+    <section id="formats">
+      <div class="wrap">
+        <div class="head">
+          <h2>Files we accept and what you get back</h2>
+          <p>We work with the standard engineering CAD suites.</p>
+        </div>
+
+        <div class="fmt">
+          <div>
+            <h3>Input formats</h3>
+            <p class="muted">Direct import from CAD and CAM software</p>
+            <ul class="chips">
+              <li>.STEP / .STP</li>
+              <li>.IGES / .IGS</li>
+              <li>.SLDPRT / .SLDASM</li>
+              <li>.FBX / .OBJ</li>
+              <li>.F3D (Fusion 360)</li>
+              <li>.STL</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Deliverables</h3>
+            <p class="muted">Production-ready visual assets</p>
+            <ul class="chips out">
+              <li>4K / 8K stills (PNG, TIFF)</li>
+              <li>Transparent alpha cutouts</li>
+              <li>60fps exploded motion clips</li>
+              <li>Clean quad meshes (.GLB, .USDZ)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CONTACT
+         ====================================================== -->
+    <section class="contact" id="contact">
+      <div class="wrap"><div class="panel"><div class="contact-grid">
+        <div>
+          <h2>Ready to upgrade your product visuals?</h2>
+          <p style="margin-top:16px;max-width:52ch">Unreleased hardware stays private. Email your brief or CAD files and get an accurate quote within 24 hours.</p>
+
+          <div class="mail">
+            <strong>vantric@proton.me</strong>
+            <button class="btn" data-copy type="button"><span data-copy-label>Copy email</span></button>
+            <a class="btn primary" href="mailto:vantric@proton.me?subject=New%20CAD%20Visualization%20Project%20Inquiry">Open mail app</a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Include in your email</h3>
+          <ol>
+            <li>CAD format (.STEP, .IGES, and so on)</li>
+            <li>Number of renders or motion duration</li>
+            <li>Deadline or launch date</li>
+            <li>NDA requirements, if any</li>
+          </ol>
+        </div>
+      </div></div></div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer>
+    <div class="wrap">
+      <span>© 2026 VantricMotion, run by Nez Wijesinghe. All rights reserved.</span>
+      <span><a href="mailto:vantric@proton.me">vantric@proton.me</a> · Private handling of CAD files</span>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       PROJECT SPEC-SHEET POP-UP (filled in by the JS)
+       ======================================================== -->
+       <dialog id="dlg-watch" aria-labelledby="dlg-watch-t">
+           <p class="kicker" style="margin:0 0 8px">Technical spec sheet</p>
+           <h3 id="dlg-watch-t">Girard-Perregaux tri-axial tourbillon watch visualization</h3>
+           <dl>
+             <dt>Source file</dt>
+             <dd>.SLDASM, SolidWorks assembly with 142 components</dd>
+             <dt>Materials</dt>
+             <dd>Grade 5 anisotropic brushed titanium, synthetic ruby jewels, AR-coated sapphire glass</dd>
+             <dt>Retopology</dt>
+             <dd>4.2M raw triangles reduced to 380k clean quads with sharp edge bevels kept</dd>
+           </dl>
+
+           <div class="row">
+             <a class="btn primary" href="https://www.behance.net/gallery/255590129/Girard-Perregaux-Tri-axial-Tourbillon-visualization" target="_blank" rel="noopener noreferrer">View Behance deep dive</a>
+             <a class="btn" href="mailto:vantric@proton.me?subject=Inquiry%20about%20Watch%20CAD%20rendering">Ask about a similar project</a>
+             <button class="btn" data-close-dialog type="button">Close</button>
+           </div>
+         </dialog>
+
+         <!-- Dialog for Project 2: Robotics -->
+         <dialog id="dlg-robotics" aria-labelledby="dlg-robotics-t">
+           <p class="kicker" style="margin:0 0 8px">Technical spec sheet (This project is currently being updated)</p>
+           <h3 id="dlg-robotics-t">Epson C4-A601S visualization </h3>
+           <dl>
+             <dt>Source file</dt>
+             <dd>GrabCAD reference, raw Epson C4-A601S CAD model (.STEP)</dd>
+             <dt>Materials</dt>
+             <dd>Production-ready surfacing applied across tool changers and auxiliary equipment</dd>
+             <dt>Rigging and motion</dt>
+             <dd>Campaign-ready asset preparation optimized for smooth mechanical animation clips</dd>
+           </dl>
+
+           <div class="row">
+             <!--<a class="btn primary" href="https://www.behance.net/vantricmotion" target="_blank" rel="noopener noreferrer">View Behance deep dive</a>-->
+             <!--<a class="btn" href="">Behance case study is currently being updated</a>-->
+             <a class="btn" href="mailto:vantric@proton.me?subject=Inquiry%20about%20Robotics%20CAD%20rendering">Ask about a similar project</a>
+             <button class="btn" data-close-dialog type="button">Close</button>
+           </div>
+         </dialog>
+
+         <!-- Dialog for Project 3: Engine -->
+         <dialog id="dlg-engine" aria-labelledby="dlg-engine-t">
+           <p class="kicker" style="margin:0 0 8px">Technical spec sheet</p>
+           <h3 id="dlg-engine-t">7 Cylinder radial engine visualization</h3>
+           <dl>
+             <dt>Source Data</dt>
+             <dd>GrabCAD reference, multi-part tri-axial tourbillon assembly CAD model (.STEP)</dd>
+             <dt>Materials</dt>
+             <dd>Multi-surface material system developed to communicate fine nested component relationships.</dd>
+             <dt>Retopology</dt>
+             <dd>Raw CAD references fully reconstructed into subdivision-ready, functional hard-surface topology.</dd>
+           </dl>
+
+           <div class="row">
+             <a class="btn primary" href="https://www.behance.net/gallery/255589977/7-Cylinder-Radial-Engine-CAD-Visualization" target="_blank" rel="noopener noreferrer">View Behance deep dive</a>
+             <a class="btn" href="mailto:vantric@proton.me?subject=Inquiry%20about%20Engine%20CAD%20rendering">Ask about a similar project</a>
+             <button class="btn" data-close-dialog type="button">Close</button>
+           </div>
+         </dialog>
+
+
+         <script>
+             /* ==========================================================
+                1. BEFORE / AFTER SLIDER
+                ========================================================== */
+             (function () {
+               var slider = document.getElementById('slider');
+               var range = document.getElementById('range');
+
+               if (!slider || !range) return;
+
+               function setPosition(v) {
+                 slider.style.setProperty('--pos', v + '%');
+                 range.value = v;
+               }
+
+               function positionFromPointer(clientX) {
+                 var box = slider.getBoundingClientRect();
+                 var percent = ((clientX - box.left) / box.width) * 100;
+                 setPosition(Math.max(0, Math.min(100, percent)));
+               }
+
+               range.addEventListener('input', function () { setPosition(range.value); });
+               slider.addEventListener('pointerdown', function (e) { positionFromPointer(e.clientX); });
+               slider.addEventListener('pointermove', function (e) { if (e.buttons) positionFromPointer(e.clientX); });
+             })();
+
+
+             /* ==========================================================
+                2. PIPELINE TABS
+                ========================================================== */
+             (function () {
+               var steps = [
+                 ['Ingest and retopologize',
+                  'We import native CAD assemblies (.STEP, .IGES, SolidWorks) with the full hierarchy intact, then convert dense triangulated meshes into clean quads for smooth shading, bevel control, and easy rigging.'],
+                 ['Author materials',
+                  'We build physically based materials from scratch: anisotropic brushed titanium, woven carbon fiber, optical acrylic, plus fine wear like edge scuffs, light dust, and fingerprints.'],
+                 ['Light and frame',
+                  'Custom studio HDRI setups highlight your key bevels and joints. Depth-of-field and macro camera passes show off the craft.'],
+                 ['Render and animate',
+                  'Final output in 4K or 8K with transparent alpha channels, plus smooth exploded-view clips that show how the assembly goes together.']
+               ];
+
+               var tabList = document.getElementById('tabs');
+               var panel = document.getElementById('panel');
+
+               if (!tabList || !panel) return;
+
+               steps.forEach(function (step, i) {
+                 var button = document.createElement('button');
+                 button.type = 'button';
+                 button.setAttribute('role', 'tab');
+                 button.id = 'tab' + i;
+                 button.innerHTML = '<i>' + (i + 1) + '</i><span>' + step[0] + '</span>';
+                 button.onclick = function () { selectStep(i); };
+                 tabList.appendChild(button);
+               });
+
+               function selectStep(i) {
+                 [].forEach.call(tabList.children, function (button, k) {
+                   button.setAttribute('aria-selected', k === i);
+                 });
+                 panel.setAttribute('aria-labelledby', 'tab' + i);
+                 panel.innerHTML = '<h3>' + steps[i][0] + '</h3><p>' + steps[i][1] + '</p>';
+               }
+
+               selectStep(0);
+             })();
+
+
+             /* ==========================================================
+                3. SPEC-SHEET DIALOG OPEN & CLOSE HANDLERS
+                ========================================================== */
+             (function () {
+               // Open the correct dialog based on the button's data-dialog attribute
+               document.querySelectorAll('[data-dialog]').forEach(function (button) {
+                 button.addEventListener('click', function () {
+                   var targetId = button.getAttribute('data-dialog');
+                   var targetDialog = document.getElementById(targetId);
+                   if (targetDialog) {
+                     targetDialog.showModal();
+                   }
+                 });
+               });
+
+               // Close buttons inside dialogs
+               document.querySelectorAll('[data-close-dialog]').forEach(function (button) {
+                 button.addEventListener('click', function () {
+                   button.closest('dialog').close();
+                 });
+               });
+
+               // Close when clicking the dark backdrop outside a dialog
+               document.querySelectorAll('dialog').forEach(function (dialog) {
+                 dialog.addEventListener('click', function (e) {
+                   if (e.target === dialog) dialog.close();
+                 });
+               });
+             })();
+
+
+             /* ==========================================================
+                4. SCROLL PROGRESS LINE
+                ========================================================== */
+             (function () {
+               var header = document.querySelector('header');
+               var root = document.documentElement;
+               var waiting = false;
+
+               if (!header) return;
+
+               function update() {
+                 waiting = false;
+                 var scrollable = root.scrollHeight - root.clientHeight;
+                 var progress = scrollable > 0
+                   ? Math.min(1, Math.max(0, root.scrollTop / scrollable))
+                   : 0;
+                 header.style.setProperty('--progress', progress);
+               }
+
+               function queueUpdate() {
+                 if (!waiting) {
+                   waiting = true;
+                   requestAnimationFrame(update);
+                 }
+               }
+
+               addEventListener('scroll', queueUpdate, { passive: true });
+               addEventListener('resize', queueUpdate);
+               update();
+             })();
+
+
+             /* ==========================================================
+                4b. SWAP LOGO AFTER THE HERO
+                ========================================================== */
+             (function () {
+               var header = document.querySelector('header');
+               var hero = document.querySelector('.hero');
+               var waiting = false;
+
+               if (!header || !hero) return;
+
+               function update() {
+                 waiting = false;
+                 var past = hero.getBoundingClientRect().bottom <= header.offsetHeight;
+                 header.classList.toggle('past-hero', past);
+                 if (past) header.classList.add('swapped'); // enables the logo3 fade-in when scrolling back up
+               }
+
+               function queueUpdate() {
+                 if (!waiting) {
+                   waiting = true;
+                   requestAnimationFrame(update);
+                 }
+               }
+
+               addEventListener('scroll', queueUpdate, { passive: true });
+               addEventListener('resize', queueUpdate);
+               update();
+             })();
+
+
+             /* ==========================================================
+                5. HIGHLIGHT THE NAV LINK FOR THE SECTION IN VIEW
+                ========================================================== */
+             (function () {
+               var links = [].slice.call(document.querySelectorAll('nav a[href^="#"]'));
+               var waiting = false;
+
+               function update() {
+                 waiting = false;
+                 var current = null;
+
+                 links.forEach(function (link) {
+                   var section = document.querySelector(link.getAttribute('href'));
+                   if (!section) return;
+
+                   var box = section.getBoundingClientRect();
+                   if (box.top <= 150 && box.bottom > 150) current = link;
+                 });
+
+                 links.forEach(function (link) {
+                   var isActive = link === current;
+                   link.classList.toggle('active', isActive);
+
+                   if (isActive) link.setAttribute('aria-current', 'true');
+                   else link.removeAttribute('aria-current');
+                 });
+               }
+
+               function queueUpdate() {
+                 if (!waiting) {
+                   waiting = true;
+                   requestAnimationFrame(update);
+                 }
+               }
+
+               addEventListener('scroll', queueUpdate, { passive: true });
+               addEventListener('resize', queueUpdate);
+               update();
+             })();
+
+
+             /* ==========================================================
+                6. COPY EMAIL BUTTONS
+                ========================================================== */
+             document.querySelectorAll('[data-copy]').forEach(function (button) {
+               var label = button.querySelector('[data-copy-label]');
+               var originalText = label ? label.textContent : '';
+               var email = 'vantric@proton.me';
+
+               function showCopied() {
+                 if (label) {
+                   label.textContent = 'Copied';
+                   setTimeout(function () { label.textContent = originalText; }, 2000);
+                 }
+               }
+
+               function fallbackCopy() {
+                 var box = document.createElement('textarea');
+                 box.value = email;
+                 box.style.position = 'fixed';
+                 box.style.opacity = '0';
+                 document.body.appendChild(box);
+                 box.select();
+                 try {
+                   document.execCommand('copy');
+                   showCopied();
+                 } catch (err) {
+                   if (label) label.textContent = email;
+                 }
+                 document.body.removeChild(box);
+               }
+
+               button.addEventListener('click', function () {
+                 if (navigator.clipboard && navigator.clipboard.writeText) {
+                   navigator.clipboard.writeText(email).then(showCopied, fallbackCopy);
+                 } else {
+                   fallbackCopy();
+                 }
+               });
+             });
+           </script>
+</body>
+</html>
