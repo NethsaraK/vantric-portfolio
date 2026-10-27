@@ -3,36 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  
+  <!-- Primary SEO Meta Tags -->
   <title>VantricMotion | CAD Visualization & Product Rendering</title>
+  <meta name="title" content="VantricMotion | CAD Visualization & Product Rendering">
+  <meta name="description" content="We turn raw, complex CAD files into high-end, photorealistic 3D visuals and motion clips for hardware startups, industrial designers, and engineers.">
+  <meta name="keywords" content="CAD visualization, 3D product rendering, retopology specialist, CAD animation, STEP file rendering, SolidWorks visualization">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://vantricmotion.com/">
+
+  <!-- Favicon / Preview Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./Static/imgs/logo2.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./Static/imgs/logo2.png">
+
+  <!-- Open Graph / Social Media Preview Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vantricmotion.com/">
+  <meta property="og:title" content="VantricMotion | Industrial Visualizations">
+  <meta property="og:description" content="We turn raw, complex CAD files into stunning, photorealistic visuals and animations.">
+  <meta property="og:image" content="https://vantricmotion.com/Static/imgs/BanneForWebPage.png">
 
   <!-- Google Fonts: Space Grotesk (headings) + IBM Plex Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <!-- The image that shows up in the preview -->
-  <meta property="og:image" content="./Static/imgs/BanneForWebPage.png">
   
-  <!-- The bold title of the preview card -->
-  <meta property="og:title" content="VantricMotion | Industrial visualizations">
-  
-  <!-- The short descriptive text under the title -->
-  <meta property="og:description" content="We turn raw, complex CAD files into stunning, photorealistic visuals and animations.">
-  
-  <!-- The official URL of the page -->
-  <meta property="og:url" content="https://nethsarak.github.io/vantric-portfolio/">
   <!-- All styling lives in style.css -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data / Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "VantricMotion",
+    "url": "https://vantricmotion.com/",
+    "logo": "https://vantricmotion.com/Static/imgs/logo2.png",
+    "image": "https://vantricmotion.com/Static/imgs/BanneForWebPage.png",
+    "description": "Custom CAD retopology, high-end 3D product visualization, and studio renders for industrial engineering.",
+    "founder": {
+      "@type": "Person",
+      "name": "Nez Wijesinghe"
+    },
+    "email": "contact@vantricmotion.com",
+    "sameAs": [
+      "https://www.instagram.com/nezwje/",
+      "https://www.linkedin.com/in/nezwijesinghe/",
+      "https://www.behance.net/vantricmotion"
+    ]
+  }
+  </script>
 </head>
 
 <body>
 
   <!-- ========================================================
-       HEADER: logo, navigation, email button
-       ======================================================== -->
+        HEADER: logo, navigation, email button
+        ======================================================== -->
   <header>
     <div class="wrap bar">
-      <!-- Logo: logo.png is the 9:1 text logo shown over the hero.
-           logo-square.png is a 1:1 PNG (e.g. 512x512 px) shown once the visitor scrolls past the hero. -->
+      <!-- Logo -->
       <a href="#" class="logo" aria-label="VantricMotion">
         <img class="logo-wide" src="./Static/imgs/logo3.png" alt="VantricMotion" width="900" height="100">
         <img class="logo-square" src="./Static/imgs/logo2.png" alt="" width="512" height="512">
@@ -61,7 +93,7 @@
         <!-- Left: text -->
         <div>
           <p class="kicker">3D technical artist and CAD retopology specialist</p>
-          <h1>Raw CAD in. <em>Photoreal</em> product shots out.</h1>
+          <h1>Raw CAD in. <em>Photoreal</em> product renders out.</h1>
           <p class="lead">Skip the prototype photo shoot. We clean up heavy CAD assemblies, build true-to-life materials, and render 4K stills and motion clips for investors, marketplaces, and launches.</p>
 
           <div class="cta">
@@ -73,7 +105,7 @@
         <!-- Right: video placeholder -->
         <div>
             <div class="sheet">
-                <video src="./Static/videos/video2.mp4"  autoplay muted loop playsinline style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--radius-md); display: block;"></video>
+                <video src="./Static/videos/video2.mp4" autoplay muted loop playsinline style="width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: var(--radius-md); display: block;"></video>
             </div>
         </div>
 
@@ -158,7 +190,6 @@
 
     <!-- ======================================================
          PROCESS: four-step pipeline
-         Tabs and panel content are filled in by the JavaScript.
          ====================================================== -->
     <section id="process" class="alt">
       <div class="wrap">
@@ -224,10 +255,6 @@
          ====================================================== -->
     <section id="lead" class="alt">
       <div class="wrap lead-grid">
-          <!--<div class="portrait">
-                <img src="nezw.jpg" alt="Nez Wijesinghe">
-        </div>-->
-
         <div>
           <h2>Nez Wijesinghe</h2>
           <p class="role">Founder of VantricMotion, lead CAD visualization artist, and retopology specialist</p>
@@ -235,13 +262,13 @@
 
           <div class="links">
             <a class="btn icon-btn" href="https://www.instagram.com/nezwje/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <img src="https://img.icons8.com/?size=100&id=59813&format=png&color=000000" alt="">
+              <img src="https://img.icons8.com/?size=100&id=59813&format=png&color=000000" alt="Instagram Profile">
             </a>
             <a class="btn icon-btn" href="https://www.linkedin.com/in/nezwijesinghe/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="">
+              <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="LinkedIn Profile">
             </a>
             <a class="btn icon-btn" href="https://www.behance.net/vantricmotion" target="_blank" rel="noopener noreferrer" aria-label="Behance case studies">
-              <img src="https://img.icons8.com/?size=100&id=102965&format=png&color=000000" alt="">
+              <img src="https://img.icons8.com/?size=100&id=102965&format=png&color=000000" alt="Behance Portfolio">
             </a>
             <a class="btn primary" href="mailto:nez@vantricmotion.com">Email Nez</a>
           </div>
@@ -363,8 +390,6 @@
     </dl>
 
     <div class="row">
-      <!--<a class="btn primary" href="https://www.behance.net/vantricmotion" target="_blank" rel="noopener noreferrer">View Behance deep dive</a>-->
-      <!--<a class="btn" href="">Behance case study is currently being updated</a>-->
       <a class="btn" href="mailto:contact@vantricmotion.com?subject=Inquiry%20about%20Robotics%20CAD%20rendering">Ask about a similar project</a>
       <button class="btn" data-close-dialog type="button">Close</button>
     </div>
@@ -389,7 +414,6 @@
       <button class="btn" data-close-dialog type="button">Close</button>
     </div>
   </dialog>
-
 
   <script>
     /* ==========================================================
@@ -416,7 +440,6 @@
       slider.addEventListener('pointerdown', function (e) { positionFromPointer(e.clientX); });
       slider.addEventListener('pointermove', function (e) { if (e.buttons) positionFromPointer(e.clientX); });
     })();
-
 
     /* ==========================================================
        2. PIPELINE TABS
@@ -459,12 +482,10 @@
       selectStep(0);
     })();
 
-
     /* ==========================================================
        3. SPEC-SHEET DIALOG OPEN & CLOSE HANDLERS
        ========================================================== */
     (function () {
-      // Open the correct dialog based on the button's data-dialog attribute
       document.querySelectorAll('[data-dialog]').forEach(function (button) {
         button.addEventListener('click', function () {
           var targetId = button.getAttribute('data-dialog');
@@ -475,21 +496,18 @@
         });
       });
 
-      // Close buttons inside dialogs
       document.querySelectorAll('[data-close-dialog]').forEach(function (button) {
         button.addEventListener('click', function () {
           button.closest('dialog').close();
         });
       });
 
-      // Close when clicking the dark backdrop outside a dialog
       document.querySelectorAll('dialog').forEach(function (dialog) {
         dialog.addEventListener('click', function (e) {
           if (e.target === dialog) dialog.close();
         });
       });
     })();
-
 
     /* ==========================================================
        4. SCROLL PROGRESS LINE
@@ -522,7 +540,6 @@
       update();
     })();
 
-
     /* ==========================================================
        4b. SWAP LOGO AFTER THE HERO
        ========================================================== */
@@ -537,7 +554,7 @@
         waiting = false;
         var past = hero.getBoundingClientRect().bottom <= header.offsetHeight;
         header.classList.toggle('past-hero', past);
-        if (past) header.classList.add('swapped'); // enables the logo3 fade-in when scrolling back up
+        if (past) header.classList.add('swapped');
       }
 
       function queueUpdate() {
@@ -551,7 +568,6 @@
       addEventListener('resize', queueUpdate);
       update();
     })();
-
 
     /* ==========================================================
        5. HIGHLIGHT THE NAV LINK FOR THE SECTION IN VIEW
@@ -592,7 +608,6 @@
       addEventListener('resize', queueUpdate);
       update();
     })();
-
 
     /* ==========================================================
        6. COPY EMAIL BUTTONS
